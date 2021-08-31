@@ -1,0 +1,234 @@
+body {
+    font-family: Tahoma, Verdana;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    z-index: 1; /*el encabezado siempre arriba de los demas elementos*/
+}
+
+.logo {
+    width: 55vw; /*el tamaño del logo afecta el area que ocupa el menu - la suma de ambos no puede ser mayor de 100 - ver nav-bar > ul */
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+}
+
+#links {
+    display: flex;
+    padding-left: 0;
+  }
+
+#links li a {
+    display: block;
+    text-decoration: none;
+    padding: 9px 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.nav-bar {
+    font-weight: 400;
+  }
+
+#links li a:hover {
+  text-decoration: underline overline #FFFFFF;
+}
+
+.nav-bar > ul {
+    width: 45vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /*abarca todo el alto de la pantalla*/
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(https://raw.githubusercontent.com/DjNaufrago/product-landing/main/image/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#home h1 {
+    font-size: 4.5em;
+    padding: 0.25em;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000000;
+    background: rgba(255,255,255, 0.9);
+    color: black;
+    mix-blend-mode: screen; /*convierte/mezcla el texto igual al fondo*/
+}
+
+#home h3 {
+    color: rgba(255,255,255, 0.9);
+    text-shadow: 2px 2px 4px #000000;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 15px #bebebe;
+    margin-top: 2%;
+    padding: 1% 10% 1% 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo {
+    color: #4169E1;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+#separator {
+    width: 10%;
+    margin-top: 1%;
+    border: solid 1px #4169E1;
+}
+
+#features {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 3%;
+}
+
+#features .titulo {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
+
+#all-features {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.feature-title {
+    color: #4169E1;
+}
+
+.feature-item {
+    box-shadow: 2px 2px 15px #bebebe;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 7%;
+    width: 20%;
+}
+
+.feature-item p {
+    padding: 5%;
+}
+
+#how-it-works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 15px #bebebe;
+    margin-top: 3%;
+    padding-top: 2%;
+    text-align: center;
+}
+
+.video-responsive {
+    position: relative; 
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    height: 0;
+    overflow: hidden;
+    }
+    
+.video-responsive iframe {
+    left: 10%;
+    top: 0;
+    height: 80%;
+    width: 80%;
+    position:absolute;
+}
+
+#suscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2% 2% 4% 2%;
+}
+
+input[type="email"] {
+    border: none;
+    outline: 0;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 1rem;
+}
+
+.btn {
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    outline: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.2s;
+  }
+  
+  .btn:hover {
+    background-color: #4169E1;
+    cursor: pointer;
+  }
+  .btn:active {
+    transform: scale(0.9);
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
